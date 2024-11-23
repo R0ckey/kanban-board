@@ -1,0 +1,28 @@
+.boardColumn {
+  flex: 1; /* Ensure columns are flexible for better responsiveness */
+  min-width: 350px; /* Increased width */
+  max-width: 400px; /* Optional: Further limit maximum width */
+  margin: 10px;
+  padding: 10px;
+  border: none; /* Remove the border */
+  border-radius: 4px;
+  background-color: transparent; /* Make column background transparent */
+  box-shadow: none; /* Remove shadow */
+}
+
+.boardColumn h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray; /* Match "Feature Request" color */
+  display: flex; /* Ensure alignment with SVGs */
+  align-items: center;
+  justify-content: center; /* Optional: Center align */
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px; /* Space between icons and text */
+  vertical-align: middle; /* Align with text */
+  fill: #007bff; /* Match "Feature Request" color */
+}

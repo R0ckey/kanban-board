@@ -1,0 +1,64 @@
+.kanban-board {
+  padding: 20px; /* Adjust padding for spacing */
+  background-color: #f0f0f0; /* Match the card background color */
+  border-radius: 8px; /* Add subtle rounding */
+  transition: background-color 0.3s ease; /* Smooth transition for any changes */
+}
+
+.options {
+  display: flex;
+  justify-content: flex-start; /* Align dropdowns to the left */
+  gap: 10px; /* Add some spacing between the buttons */
+  margin-bottom: 15px; /* Space below the options */
+}
+
+.options button {
+  background-color: #ffffff; /* Match card background */
+  color: #000000; /* Black text */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Match card styling */
+  padding: 8px 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  cursor: pointer;
+}
+
+.options button:hover {
+  background-color: #f7f7f7; /* Match card hover color */
+  color: #000000; /* Maintain text contrast */
+}
+
+
+.board-columns {
+  display: flex;
+  gap: 20px;
+  width: 100%; /* Ensure columns span the full width */
+  overflow-x: auto; /* Enable horizontal scrolling if columns overflow */
+}
+.dropdown-button {
+  background-color: #007bff; /* Match Feature Request color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; /* Align SVGs with text */
+  fill: #007bff; /* Match text color */
+}
+
+
+@media (max-width: 768px) {
+  .board-columns {
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+    justify-content: center;
+  }
+}
